@@ -11,8 +11,11 @@ body{
     background-color: hsl(218, 28%, 13%);
     color: white;
 }
+.navbar{
+    margin-top: 5%;
+}
 .navbar img{
-    width: 60%;
+    width: 70%;
 }
 .nav-link{
     color:#f4f3f3;
@@ -21,7 +24,7 @@ body{
     color:#ffffff;
 }
 .intro{
-    margin-top: 5%;
+    margin-top: 7%;
 }
 .intro img{
     width: 50%;
@@ -63,10 +66,11 @@ button{
 }
 .advantages-1{
     width: 30%;
+    margin-top: 9%;
 }
 .advantages{
     width: 30%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 .advantages h5,.advantages-1 h5{
     font-size: 1.3rem;
@@ -139,8 +143,241 @@ button:hover{
   .fullname{
       margin-left: 5%;
   }
+  .sign-up {
+    width: 70%;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+  }
+  
+  .sign-up-card {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c2431;
+    text-align: center;
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 6px 5px 8px 1px #0f0f0f;
+  }
+  .sign-up__heading{
+      font-weight: 700;
+  }
+  .sign-up__text {
+    width: 80%;
+    margin: 1rem 0;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+  
+  #Email,#Submit{
+    padding: 10px;border-radius: 25px;
+    transition: box-shadow 0.5s;outline: none;
+}
+.text{
+    width: 65%;
+    margin: 0 auto;
+}
+#Email{
+    border: solid 1px hsla(0, 0%, 59%,0.5);color:hsl(0, 0%, 59%);width: 68%;font-weight: 300;float: left;
+}
+#Submit{
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%) );
+    width:30%;color: white;
+    float: right;
+    border: none;
+    border-radius: 4rem;
+}
+  
+  @media screen and (min-width: 800px) {
+    .sign-up__heading {
+      font-size: 2rem;
+    }
+  
+    .sign-up__input {
+      width: 400px;
+      border-radius: 50%/200px;
+    }
+  
+    .gs-button_bottom {
+      width: 200px;
+      margin-left: 2rem;
+      margin-top: 0;
+    }
+  
+    .sign-up__form {
+      flex-direction: row;
+    }
+  }
+  .footer {
+    padding: 0 4rem;
+    margin: 0 auto;
+    background: #0b1523;
+  }
+  
+  .footer__logo {
+    margin-top: 10%;
+    width: 65%;
+    max-width: 200px;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  
+  .location {
+    background: url("../images/icon-location.svg") no-repeat 1% 50%;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info a{
+      text-decoration: none;
+      color: hsl(0, 0%, 100%);
+  }
+  .contact-info a:hover{
+    text-decoration: none;
+  }
+  .contact-info__telephone {
+    margin-bottom: 2rem;
+    background: url("../images/icon-phone.svg") no-repeat;
+    padding-left: 2rem;
+  }
+  
+  .contact-info__email {
+    background: url("../images/icon-email.svg") no-repeat;
+    padding-left: 2rem;
+  }
+  
+  .contact-info__telephone:hover, .contact-info__telephone:active, .contact-info__email:hover, .contact-info__email:active {
+    text-decoration: underline;
+  }
+  
+  .bottom-nav {
+    width: 100%;
+    margin: 4rem 0;
+  }
+  
+  .bottom-nav__1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .bottom-nav__1 a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .bottom-nav__2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-nav__2 a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .bottom-nav__link {
+    margin-bottom: 1rem;
+  }
+  .bottom-nav__link:hover, .bottom-nav__link:active {
+    font-weight: bold;
+  }
+  
+  .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social__link {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 0 0.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding-top: 1.2%;
+    color: white;
+  }
+  .social__link:hover, .social__link:active {
+    color: #65e2d9;
+    border-color: #65e2d9;
+  }
+  
+  @media screen and (min-width: 500px) {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "logo ." "location-contact bottom-nav" "social social";
+    }
+  
+    .footer__logo {
+      grid-area: logo;
+    }
+  
+    .location-contact-wrapper {
+      grid-area: location-contact;
+    }
+  
+    .bottom-nav {
+      grid-area: bottom-nav;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 0;
+    }
+  
+    .bottom-nav {
+      width: 100%;
+    }
+  
+    .bottom-nav__1 {
+      width: 100%;
+    }
+  
+    .bottom-nav__2 {
+      width: 100%;
+    }
+  
+    .social {
+      grid-area: social;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "logo . . ." "location-contact location-contact bottom-nav social";
+    }
+  
+    .location-contact-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .location {
+      background-position: 0 5%;
+      margin-right: auto;
+    }
+  
+    .contact-info {
+      margin-right: auto;
+    }
+  
+    .contact-info__telephone {
+      margin-bottom: 1rem;
+    }
+  }
+  footer{
+      background-color:  hsl(216, 53%, 9%);
+  }
 .attribution { 
-    margin: 2%;
     font-size: 15px; 
     text-align: center;
  }
